@@ -1,0 +1,13 @@
+/* reset */
+*{margin: 0; padding: 0;}
+ul, li{margin: 0; padding: 0; list-style: none;}
+a, img{display: block;}
+
+h1{text-align: center; font-size: 33px; color: #212121; margin: 50px;}
+
+#mySwipe{max-width: 1200px; margin: 0 auto;}
+#mySwipe img{width: 100%; max-width: 100%;}
+.swipe{overflow: hidden; position: relative;}
+.swipe .swipe-wrap li{float: left; width: 100%; position: relative;}
+
+.btn_wrap{text-align: center; margin-top: 20px;}
