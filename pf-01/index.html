@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Land</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 나눔고딕 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <!-- 슬라이드 -->
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    
+    <link rel="shoutcut icon" href="images/fv.png">
+    <script>
+        // 페이드인아웃 - 플러그인
+        $(function(){
+            $('.inner-fade').innerfade({animationtype:'fade',timeout:2500});
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <!-- 로고 -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </div>
+            <!-- 상단메뉴 -->
+            <div class="menu">
+                <ul>
+                    <li><a href="#">사과축제</a></li>
+                    <li><a href="#">구전동화</a></li>
+                    <li><a href="#">사과노래</a></li>
+                    <li><a href="#">사과요리</a></li>
+                    <li><a href="bbs.html">커뮤니티</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 슬라이드 이미지 -->
+        <section class="me">
+            <h1 class="blind">슬라이드화면</h1>
+            <ul class="inner-fade">
+                <li><a href="#"><img src="images/main_page/main.jpg" alt="메인"></a></li>
+                <li><a href="#"><img src="images/main_page/main_slide1.jpg" alt="메인"></a></li>
+                <li><a href="#"><img src="images/main_page/main_slide2.jpg" alt="메인"></a></li>               
+            </ul>
+        </section>
+        
+        <!-- 상단화면 -->
+        <section class="info">
+            <h1 class="blind">상단화면</h1>
+            
+            <!-- 공지사항 -->
+            <div class="notice">
+                
+                <h1>공지사항</h1>
+                <ul> <!-- ul>li>span.t+a+span -->
+                    <li><span class="a1 nstyle">[고민상담]</span><a href="#">사과요리 무엇이 있을까요?</a><span>21.03.12</span></li>
+                    <li><span class="a1 nstyle">[고민상담]</span><a href="#">사과 맛있나요?</a><span>21.03.12</span></li>
+                    <li><span class="a2 nstyle">[커뮤니티]</span><a href="#">사과축제 가실분 구합니다.</a><span>21.03.12</span></li>
+                    <li><span class="a2 nstyle">[커뮤니티]</span><a href="#">미스 사과 콘테스트 인원 모집</a><span>21.03.12</span></li>
+                    <li><span class="a3 nstyle">[보도자료]</span><a href="#">청송사과축제 대규모인파...</a><span>21.03.12</span></li>
+                    <li><span class="a3 nstyle">[보도자료]</span><a href="#">사과가 피부미용이 좋은게 사실일까</a><span>21.03.12</span></li>
+                    <li><span class="a3 nstyle">[보도자료]</span><a href="#">사과껍질 어디까지 알고있나</a><span>21.03.12</span></li>
+                    </ul>
+            </div>
+            <!-- 배너사진 -->
+            <div class="banner">
+                <img src="images/main_page/banner.png" alt="배너">
+            </div>
+        </section>
+
+        <!-- 하단사진 -->
+        <section class="photo">
+            <h1 class="blind">하단사진</h1>
+            <ul>
+                <li><a href="#"><p class="img"><img src="images/main_page/1.jpeg" alt="이미지1"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/2.jpeg" alt="이미지2"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/3.jpeg" alt="이미지3"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/4.jpeg" alt="이미지4"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/5.jpeg" alt="이미지5"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/6.jpeg" alt="이미지6"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/7.jpeg" alt="이미지7"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/8.jpeg" alt="이미지8"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/9.jpeg" alt="이미지9"></p></a></li>
+                <li><a href="#"><p class="img"><img src="images/main_page/10.jpeg" alt="이미지10"></p></a></li>
+            </ul>
+        </section>
+        
+        <!-- footer -->
+        <footer>
+
+            <div class="blogo">
+                <a href="index.html">
+                    <img src="images/blogo.png" alt="blogo">
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    사과의 모든것 : 김사과<br />
+                    Copyright &copy; 2021 <a href="mailto:samsung@samsung.co..kr">appleland</a> All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/sns/f.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/sns/y.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/sns/t.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/sns/b.png" alt="밴드"></a></li>
+                    <li><a href="#"><img src="images/sns/i.png" alt="인스타그램"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
