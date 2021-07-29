@@ -1,0 +1,111 @@
+@import url("./reset.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+/* slider */
+#wrap section div.slider{width: 100%; height: 400px; position: relative; overflow: hidden;}
+#wrap section div.slider div.swiper-wrapper{display: flex; width: 100%; height: 400px;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide{width: 100%; height: 400px;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul{width: 980px; margin: 0 auto; padding-top: 240px;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul>li{float: left; margin-right: 5px; transition: 2s; opacity: 0;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul>li:nth-child(1){transform: translateY(-10%);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul>li:nth-child(2){transform: translateY(-20%);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul>li:nth-child(3){transform: translateY(-30%);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul>li:nth-child(4){transform: translateY(-40%);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide>ul>li:nth-child(5){transform: translateY(-50%);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide-active>ul>li:nth-child(1){opacity: 1; transform: translateY(0);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide-active>ul>li:nth-child(2){opacity: 1; transform: translateY(0);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide-active>ul>li:nth-child(3){opacity: 1; transform: translateY(0);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide-active>ul>li:nth-child(4){opacity: 1; transform: translateY(0);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide-active>ul>li:nth-child(5){opacity: 1; transform: translateY(0);}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide.img1{background: url("../images/main_visual1.jpg")no-repeat center;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide.img2{background: url("../images/main_visual2.jpg")no-repeat center;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide.img3{background: url("../images/main_visual3.jpg")no-repeat center;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide.img4{background: url("../images/main_visual4.jpg")no-repeat center;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide.img5{background: url("../images/main_visual5.jpg")no-repeat center;}
+#wrap section div.slider div.swiper-wrapper div.swiper-slide.img6{background: url("../images/main_visual6.jpg")no-repeat center;}
+/* 재생,정지 */
+#wrap section div.slider div.swiper-container div.auto_btn{position: absolute; left: 50%; transform: translateX(-50%); bottom: 12px;}
+#wrap section div.slider div.swiper-container div.auto_btn span.on{display: block; width: 20px; height: 14px; position: absolute; left: -24px; cursor: pointer;}
+#wrap section div.slider div.swiper-container div.auto_btn span.auto{background: url("../images/bt_control_stop_on.png")no-repeat;}
+#wrap section div.slider div.swiper-container div.auto_btn span.pause{background: url("../images/bt_control_stop.png")no-repeat;}
+/* 위치 선택 버튼 */
+#wrap section div.slider div.swiper-container div.auto_btn div.swiper-pagination span.swiper-pagination-bullet{display: inline-block; width: 14px; height: 14px; background: url("../images/bt_control.png")no-repeat; cursor: pointer; margin: 0 3px;}
+#wrap section div.slider div.swiper-container div.auto_btn div.swiper-pagination span.swiper-pagination-bullet-active{background: url("../images/bt_control_on.png")no-repeat;}
+
+/* service */
+#wrap section div.service{width: 100%; height: 300px; padding-top: 60px; box-sizing: border-box;}
+#wrap section div.service div.service_inner{position: relative;}
+#wrap section div.service div.service_inner p.title{width: 100%; text-align: center;}
+/* service-slider */
+#wrap section div.service div.service_inner div.service_slider{margin-top: 30px; padding-left: 45px; box-sizing: border-box;}
+#wrap section div.service div.service_inner div.service_slider div.swiper-container{position: relative; overflow: hidden; z-index: 1; width: 870px;}
+#wrap section div.service div.service_inner div.service_slider div.swiper-container div.swiper-wrapper {position: relative; width: 100%; height: 150px;z-index: 1; display: flex; transition-property: transform; box-sizing: content-box;
+    display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;
+    -webkit-transition-property: -webkit-transform; -moz-transition-property: -moz-transform; -o-transition-property: -o-transform; -ms-transition-property: -ms-transform;
+    -webkit-box-sizing: content-box; -moz-box-sizing: content-box;
+}
+.swiper-slide {-webkit-flex-shrink: 0; -ms-flex: 0 0 auto; flex-shrink: 0; width: 100%; height: 100%; position: relative;}
+.swiper-slide a{display: block; padding-top: 20px; text-align: center;}
+.service_slider div.swiper-slide{border-right:1px solid #e6e6e6; box-sizing:border-box; height: 150px;}
+.service_slider div.swiper-slide a{display: block; padding-top: 120px; box-sizing: border-box; text-align: center; color: #444444; font-weight: bold;}
+.service_slider div.swiper-slide.img1{background: url("../images/icon_service1.gif")no-repeat center 0;}
+.service_slider div.swiper-slide.img2{background: url("../images/icon_service2.gif")no-repeat center 0;}
+.service_slider div.swiper-slide.img3{background: url("../images/icon_service3.gif")no-repeat center 0;}
+.service_slider div.swiper-slide.img4{background: url("../images/icon_service4.gif")no-repeat center 0;}
+.service_slider div.swiper-slide.img5{background: url("../images/icon_service5.gif")no-repeat center 0;}
+.service_slider div.swiper-slide.img6{background: url("../images/icon_service6.gif")no-repeat center 0;}
+.service_slider div.swiper-slide.img7{background: url("../images/icon_service7.gif")no-repeat center 0;}
+/* btn */
+#wrap section div.service div.service_inner div.btn div.prevBtn{background: url("../images/btn_mprev.gif")no-repeat; width: 50px; height: 50px; position: absolute; left: 0; top: 50%; cursor: pointer;}
+#wrap section div.service div.service_inner div.btn div.nextBtn{background: url("../images/btn_mnext.gif")no-repeat; width: 50px; height: 50px; position: absolute; right: 0; top: 50%; cursor: pointer;}
+
+/* notice */
+#wrap section div.notice{width: 100%; height: 260px; background: url("../images/bg_Mnotice.gif")no-repeat 50% 0;}
+/* notice-left */
+#wrap section div.notice div.left{width: 50%; height: 260px; float: left; padding-top: 26px; box-sizing: border-box; position: relative;}
+/* notice-left-title */
+#wrap section div.notice div.left div.title{float: left; width: 100%;}
+#wrap section div.notice div.left div.title ul li{float: left; width: 72px; height: 16px; border-right: 1px solid #6c6c6c; padding-left: 14px;}
+#wrap section div.notice div.left div.title ul li:nth-child(1){padding: 0;}
+#wrap section div.notice div.left div.title ul li:nth-child(4){ border-right: none;}
+#wrap section div.notice div.left div.title ul li span{display: block; width: 100%; height: 100%; cursor: pointer;}
+#wrap section div.notice div.left div.title ul li:nth-child(1) span{background: url("../images/tab1.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(1).on span{background: url("../images/tab1_over.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(2) span{background: url("../images/tab2.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(2).on span{background: url("../images/tab2_over.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(3) span{background: url("../images/tab3.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(3).on span{background: url("../images/tab3_over.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(4) span{background: url("../images/tab4.gif")no-repeat;}
+#wrap section div.notice div.left div.title ul li:nth-child(4).on span{background: url("../images/tab4_over.gif")no-repeat;}
+/* notice-left-contents */
+#wrap section div.notice div.left div.contents{float: left; width: 100%; margin-top: 30px;}
+#wrap section div.notice div.left div.contents ul li.off{display: none;}
+#wrap section div.notice div.left div.contents ul li ul li{width: 100%; height: 28px; line-height: 28px; background: url("../images/icon_dot.gif")no-repeat 0 center; padding-left: 13px;}
+#wrap section div.notice div.left div.contents ul li ul li a{display: block; float: left; color: #555;}
+#wrap section div.notice div.left div.contents ul li ul li span{display: block; float: right; padding-right: 40px;}
+/* notice-left-more */
+#wrap section div.notice div.left div.more{position: absolute; right: 30px; top: 25px;}
+/* notice-center */
+#wrap section div.notice div.center{width: 30%; height: 260px; float: left; padding-top: 26px; box-sizing: border-box;}
+/* notice-center-title */
+#wrap section div.notice div.center div.title{float: left; width: 100%; padding-left: 20px; box-sizing: border-box;}
+#wrap section div.notice div.center div.title span{display: block; width: 58px; height: 16px; background: url("../images/txt_customer.gif")no-repeat;}
+/* notice-center-contents */
+#wrap section div.notice div.center div.contents{width: 100%; float: left;}
+#wrap section div.notice div.center div.contents ul li{width: 33.333%; height: 82px; float: left; margin-top: 10px; background: url("../images/icon_dotBg2.gif")repeat-y right 0;}
+#wrap section div.notice div.center div.contents ul li:nth-child(3), #wrap section div.notice div.center div.contents ul li:nth-child(6){background: none;}
+#wrap section div.notice div.center div.contents ul li:nth-child(4), #wrap section div.notice div.center div.contents ul li:nth-child(5), #wrap section div.notice div.center div.contents ul li:nth-child(6){margin-top: 20px;}
+#wrap section div.notice div.center div.contents ul li a{display: block; width: 98%; padding-top: 50px; box-sizing: border-box; text-align: center; color: #555;}
+#wrap section div.notice div.center div.contents ul li:nth-child(1) a{background: url("../images/icon_i1.gif")no-repeat;}
+#wrap section div.notice div.center div.contents ul li:nth-child(2) a{background: url("../images/icon_i2.gif")no-repeat;}
+#wrap section div.notice div.center div.contents ul li:nth-child(3) a{background: url("../images/icon_i3.gif")no-repeat;}
+#wrap section div.notice div.center div.contents ul li:nth-child(4) a{background: url("../images/icon_i4.gif")no-repeat;}
+#wrap section div.notice div.center div.contents ul li:nth-child(5) a{background: url("../images/icon_i5.gif")no-repeat;}
+#wrap section div.notice div.center div.contents ul li:nth-child(6) a{background: url("../images/icon_i6.gif")no-repeat;}
+/* notice-right */
+#wrap section div.notice div.right{width: 20%; height: 260px; float: left; position: relative; overflow: hidden;}
+#wrap section div.notice div.right div.right_bar{width: 100%; height: 260px; background: url("../images/right_Con_bg.jpg")no-repeat;}
+#wrap section div.notice div.right a{display: block; width: 164px; height: 82px; font-size: 0;}
+#wrap section div.notice div.right a:nth-child(1){position: absolute; top: 61px; left: 0;}
+#wrap section div.notice div.right a:nth-child(2){position: absolute; top: 153px; left: 0;}
