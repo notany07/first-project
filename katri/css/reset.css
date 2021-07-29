@@ -1,0 +1,6 @@
+*{margin: 0; padding: 0;}
+ul, li{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.header_inner, .btn_inner, .service_inner, .notice_inner, .footer_inner{width: 980px; margin: 0 auto;}
+.blind{font-size: 0px; z-index: -999; text-indent: -999px;}
+body{font-size: 12px; font-family: '맑은 고딕', 'Malgun Gothic', dotum,"돋움",sans-serif; color: #444;}
