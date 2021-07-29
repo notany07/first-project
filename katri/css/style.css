@@ -3,7 +3,7 @@
 @import url("./footer.css");
 
 /* slider */
-#wrap section div.slider{width: 100%; height: 400px; position: relative;}
+#wrap section div.slider{width: 100%; height: 400px; position: relative; overflow: hidden;}
 #wrap section div.slider div.swiper-wrapper{display: flex; width: 100%; height: 400px;}
 #wrap section div.slider div.swiper-wrapper div.swiper-slide{width: 100%; height: 400px;}
 #wrap section div.slider div.swiper-wrapper div.swiper-slide>ul{width: 980px; margin: 0 auto; padding-top: 240px;}
