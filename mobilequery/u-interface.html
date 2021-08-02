@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile jquery</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <style>
+        iframe{width: 100%; height: 500px;}
+    </style>
+</head>
+<body>
+    <div data-role="page" id="index" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>Top</h1>
+        </div>
+        <!-- content -->
+        <div data-role="content">
+            <ul data-role="listview" data-theme="c" data-inset="true">
+                <li data-role="list-divider">
+                    Menu
+                </li>
+                <li>
+                    <a href="#about">
+                        <h2>앱지에 대하여</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#seminar">
+                        <h2>앱지 세미나 정보</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#access">
+                        <h2>앱지 오시는길</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <h2>문의하기</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- footer -->
+        <div data-role="footer" data-theme="b">
+            <h3>
+                <small>
+                    copyright &copy; 2021 APPGI All right reserved.
+                </small>
+            </h3>
+        </div>
+    </div>
+    <!-- sub1 : 앱지에 대하여 -->
+    <div data-role="page" id="about" data-theme="c">
+        <div data-role="header" data-theme="b">
+            <a href="#index" data-icon="arrow-l" data-tansition="flip" data-direction="reverse">Top</a>
+            <h1>Top</h1>
+        </div>
+        <div data-role="content">
+            <h2>1. 앱지에 대하여</h2>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>
+                <small>
+                    copyright &copy; 2021 APPGI All right reserved.
+                </small>
+            </h3>
+        </div>
+    </div>
+    <!-- sub2 : 앱지 세미나 정보 -->
+    <div data-role="page" id="seminar" data-theme="c">
+        <div data-role="header" data-theme="b">
+            <a href="#index" data-icon="arrow-l" data-tansition="flip" data-direction="reverse">Top</a>
+            <h1>Top</h1>
+        </div>
+        <div data-role="content">
+            <h2>2. 앱지 세미나정보</h2>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>
+                <small>
+                    copyright &copy; 2021 APPGI All right reserved.
+                </small>
+            </h3>
+        </div>
+    </div>
+    <!-- sub3 : 오시는길 -->
+    <div data-role="page" id="access" data-theme="c">
+        <div data-role="header" data-theme="b">
+            <a href="#index" data-icon="arrow-l" data-tansition="flip" data-direction="reverse">Top</a>
+            <h1>Top</h1>
+        </div>
+        <div data-role="content">
+            <h2>3. 오시는길</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.9464555188174!2d127.15632141522809!3d36.81980297429578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b29a3550a003b%3A0x96dde636e6102be1!2z7LyA7J2065SU7KeA7YS47JWE7Lm0642w66-47ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1626760144795!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>
+                <small>
+                    copyright &copy; 2021 APPGI All right reserved.
+                </small>
+            </h3>
+        </div>
+    </div>
+    <!-- sub4 : 문의하기 -->
+    <div data-role="page" id="contact" data-theme="c">
+        <div data-role="header" data-theme="b">
+            <a href="#index" data-icon="arrow-l" data-tansition="flip" data-direction="reverse">Top</a>
+            <h1>Top</h1>
+        </div>
+        <div data-role="content">
+            <h2>4. 문의하기</h2>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>
+                <small>
+                    copyright &copy; 2021 APPGI All right reserved.
+                </small>
+            </h3>
+        </div>
+    </div>
+</body>
+</html>
