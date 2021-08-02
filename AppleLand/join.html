@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Land-회원가입</title>
+    <link rel="stylesheet" href="css/join.css">
+    
+    <!-- 나눔고딕 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <!-- 슬라이드 -->
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    
+    <link rel="shoutcut icon" href="images/fv.png">
+    
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">사과축제</a></li>
+                    <li><a href="#">구전동화</a></li>
+                    <li><a href="#">사과노래</a></li>
+                    <li><a href="#">사과요리</a></li>
+                    <li><a href="bbs.html">커뮤니티</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section>
+            <h1 class="blind">contents</h1>
+            <!-- left menu -->
+            <aside>
+                <!-- 상단이미지 -->
+                <div class="subimg1">
+                    <p>Information</p>
+                </div>
+                
+                <!-- 왼쪽메뉴 -->
+                <div class="lnb">
+                    <ul class="nav">
+                        <li class="bg"><a href="join.html">회원가입</a></li>
+                        <li class="bg"><a href="#">로그인</a></li>
+                        <li class="bg"><a href="#">아이디/비밀번호찾기</a></li>
+                        <li class="bg"><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- center contents -->
+            <div id="contents">
+                <h1>회원가입</h1>
+
+                <a href="#">
+                    <img src="images/join/title.jpg" alt="title">
+                </a>
+                <form action="#" method="POST" class="basic_info">
+                    <legend class="blind">기본정보입력</legend>
+                    <h2>
+                        <img src="images/join/icon_arrow.gif" alt="필수">
+                        기본정보입력확인화면
+                        <span>입력 항목 중 (<strong>*</strong>)표시된 항목은 필수 입력 항목</span>
+                    </h2>
+
+                    <table>
+                        <caption class="blind">
+                            기본정보입력화면
+                        </caption>
+                        <tbody>
+                            <!-- 1. 아이디 입력 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userId"><strong>*</strong> 아이디</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userId" maxlength="12">
+                                        <span>영문으로 시작하는 6~12자리 영문, 숫자만 가능합니다.</span>
+                                    </input>
+                                </td>
+                            </tr>
+                            <!-- 2. 비밀번호 설정 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPw"><strong>*</strong> 비밀번호</label>
+                                </th>
+                                <td>
+                                    <input type="password" id="userPw" maxlength="12">
+                                        <span>8자리 이상 영문, 숫자를 조합하여 입력해주시기 바랍니다.</span>
+                                    </input>
+                                </td>
+                            </tr>
+                            <!-- 3. 비밀번호 확인 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPwch"><strong>*</strong> 비밀번호 확인</label>
+                                </th>
+                                <td>
+                                    <input type="password" id="userPwch" maxlength="12">
+                                        <span>비밀번호를 다시 입력해 주시기 바랍니다.</span>
+                                    </input>
+                                </td>
+                            </tr>
+                            <!-- 4. 이름 입력 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userName"><strong>*</strong> 이름</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userName" maxlength="12">
+                                    </input>
+                                </td>
+                            </tr>
+                            <!-- 5. 생일 입력 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userBd"><strong>*</strong> 생년월일</label>
+                                </th>
+                                <td>
+                                    <!-- 년,월,일 -->
+                                    <input type="text" id="userBd" title="년도" size="3" maxlength="4">년</input>
+                                    <input type="text" id="userBd2" title="월" size="1" maxlength="2">월</input>
+                                    <input type="text" id="userBd3" title="일" size="1" maxlength="2">일</input>
+                                    <!-- 양력, 음력 체크 (radio타입은 name값이 같아야 그룹화되서 고르는 체크가 가능) -->
+                                    <input type="radio" id="solar_calender" name="calendar" checked="checked">
+                                    <label for="solar_calender">양력</label>
+                                    <input type="radio" id="solar_calender" name="calendar">
+                                    <label for="solar_calender">음력</label>
+                                </td>
+                            </tr>
+                            <!-- 6. 이메일 입력 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userEmail"><strong>*</strong> 본인확인 (이메일)</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="userEmail" title="이메일 아이디 입력">
+                                    &#64; <!-- @모양 -->
+                                    <input type="text" id="userEmail" title="이메일 서비스 회사">
+                                    <select>
+                                        <option value="#">도메인선택</option>
+                                        <option value="#">naver.com</option>
+                                        <option value="#">hanmail.net</option>
+                                        <option value="#">gmail</option>
+                                    </select>
+                                    <p class="info">
+                                        <em>보유하신 이메일</em>을 입력해주세요.<br />
+                                        <span>정확한 이메일주소</span>를 입력해주시기 바랍니다.
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- 7. 이메일 수신여부 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userEmailch"><strong>*</strong> 이메일 수신여부</label>
+                                </th>
+                                <td>
+                                    <p>
+                                        <input type="radio" name="recive" checked="checked">
+                                        <label for="agreement">모두수신(이벤트,축제 소식 등)</label>
+                                        <input type="radio" name="recive">
+                                        <label for="agreement2">수신거부</label>
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- 8. 휴대폰번호 입력 -->
+                            <tr>
+                                <th scope="row">
+                                    <label for="userPhone"><strong>*</strong> 휴대폰번호</label>
+                                </th>
+                                <td class="mobile">
+                                    <!-- 통신사 -->
+                                    <select title="통신사입력">
+                                        <option value="#">SKT</option>
+                                        <option value="#">KT</option>
+                                        <option value="#">LG</option>
+                                    </select>
+                                    <!-- 앞번호 입력 -->
+                                    <select title="앞번호 입력">
+                                        <option value="#">010</option>
+                                        <option value="#">011</option>
+                                        <option value="#">016</option>
+                                        <option value="#">017</option>
+                                        <option value="#">018</option>
+                                        <option value="#">019</option>
+                                    </select>
+                                    -
+                                    <input type="text" id="userPhone" size="8" maxlength="4">
+                                    -
+                                    <input type="text" id="userPhone" size="8" maxlength="4">
+                                </td>
+                            </tr>
+                            <!-- 9. sms수신여부 -->
+                            <tr>
+                                <th scope="row">
+                                    <strong>*</strong> SMS 수신여부
+                                </th>
+                                <td>
+                                    <p>
+                                        <input type="checkbox" id="allAgree" checked="checked">
+                                        <label for="usersms">모두수신</label>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <!-- 확인/취소 버튼 -->
+                <p class="btn">
+                    <a href="#"><input type="image" src="images/join/btn_cancel.gif" alt="취소"></a>
+                    <a href="#"><input type="image" src="images/join/btn_ok.gif" alt="확인"></a>
+                </p>
+                
+            </div>
+        </section>
+        
+        <!-- footer -->
+        <footer>
+            <div class="blogo">
+                <a href="index.html">
+                    <img src="images/blogo.png" alt="blogo">
+                </a>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    사과의 모든것 : 김사과<br />
+                    Copyright &copy; 2021 <a href="mailto:samsung@samsung.co..kr">appleland</a> All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/sns/f.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/sns/y.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/sns/t.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/sns/b.png" alt="밴드"></a></li>
+                    <li><a href="#"><img src="images/sns/i.png" alt="인스타그램"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
