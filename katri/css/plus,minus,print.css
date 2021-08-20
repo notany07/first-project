@@ -1,0 +1,11 @@
+.title_inner{width: 980px; margin: 0 auto;}
+
+/* title */
+#wrap section div.title{width: 100%; height: 40px; background: #fbfbfb; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;}
+#wrap section div.title div.title_inner{background: url("../images/icon_home.gif")no-repeat 0 center; padding-left: 25px; box-sizing: border-box; position: relative;}
+#wrap section div.title div.title_inner ul{height: 40px; line-height: 40px;}
+#wrap section div.title div.title_inner ul li{float: left; margin-right: 10px; padding-right: 13px;}
+#wrap section div.title div.title_inner ul li:nth-child(1){background: url("../images/icon_path.gif")no-repeat 55px center;}
+#wrap section div.title div.title_inner ul li.end{font-weight: bold;}
+#wrap section div.title div.title_inner div.btn{position: absolute; top: 0; right: 0;}
+#wrap section div.title div.title_inner div.btn a img{display: block; float: left;}
