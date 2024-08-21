@@ -7,6 +7,7 @@ a{text-decoration: none;}
 .blind {position: absolute; top: 0; left: 0; overflow: hidden; text-indent: -9999999px; width: 0; height: 0; font-size: 0;}
 
 /* 영문폰트연결 */
+:root{font-size: 16px;}
 body{font: normal 15px 'RalewayL'; color: #444;}
 @font-face {font-family: 'RalewayL'; src: url("../font/Raleway-Light.ttf");}
 @font-face {font-family: 'RalewayLT'; src: url("../font/Raleway-Thin.ttf");}
@@ -14,27 +15,62 @@ body{font: normal 15px 'RalewayL'; color: #444;}
 @font-face{font-family: 'SpoqaL'; src: url(../font/SpoqaHanSansLight.ttf), url(../font/NanumSquare_acR.ttf), url(../font/SpoqaHanSansLight.woff);}
 @font-face{font-family: 'SpoqaR'; src: url(../font/SpoqaHanSansRegular.ttf), url(../font/SanumSquare_acR.ttf), url(../font/SpoqaHanSansRegular.woff);}
 
+@media (max-width:1024px){
+    :root{font-size: 1.5vw;}
+}
+
+@media (max-width:480px){
+    :root{font-size:3vw;}
+}
+
 /* header */
 header{width: 100%; position: fixed; border-bottom: 1px solid #e6e6e6; background: #fff; z-index: 999;}
 header .header_main{max-width: 1400px; width:90%; height: 70px; margin: 0 auto; display: flex; justify-content: space-between;}
 header .header_main .logo{line-height: 70px;}
-header .header_main .logo h1{font-size: 23px; letter-spacing: 5px;}
+header .header_main .logo h1{font-size: 1.25rem; letter-spacing: 5px;}
 header .header_main .logo h1 a{color: #444;}
 header .header_main .logo h1 a span{color: #b5cc7c;}
-header .header_main .logo h1 a span.pf{font-size: 12px; position: relative;}
-header .header_main .logo h1 a span.pf::before{content: ""; position: absolute; top: 2px; left: -8px; width: 2px; height: 9px; background: #b5cc7c;}
+header .header_main .logo h1 a span.pf{font-size: 1rem; position: relative;}
+header .header_main .logo h1 a span.pf::before{content: ""; position: absolute; top: 2px; left: -8px; width: 2px; height: 1rem; background: #b5cc7c;}
+
+/* menu */
+header .header_main ul.nav{display: flex; align-items: center;}
+header .header_main ul.nav li{padding: 1.25rem; color: #444; font-size: 1rem; font-weight: bold; cursor: pointer;}
+header .header_main ul.nav li.on{color: #b5cc7c;}
+header .header_main ul.nav li.on2{border-bottom: 3px solid #b5cc7c;}
+
+@media (max-width:480px){
+    header .header_main ul.nav{display:none;}
+}
+
+
+/* common */
+section .section_inner{width:90%; max-width: 1400px; margin: 0 auto;}
+
+/* about */
+section.about{padding: 100px 0 100px;}
+section.about .tit{margin-bottom: 50px;}
+section.about .tit .ko{width: fit-content; margin: 0 auto; font-size: 1.1rem; font-weight: 600; padding-bottom: 1rem; border-bottom:1px solid #000; margin-bottom: 1rem;}
+section.about .tit .en{width: fit-content; margin: 0 auto; font-size: 1.25rem;}
+section.about .contents{text-align: center;}
+section.about .contents h2{font-weight: normal; font-size: 2rem;}
+section.about .contents h2 span{background: linear-gradient(to left, #b5cc7c, #8ca944); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+section.about .contents p{font-size: 1rem; line-height: 1.4; margin-top: 1.25rem;}
+
+
+@media (max-width:480px){
+    section.about{padding: 100px 0 50px;}
+    section.about .tit{margin-bottom: 30px;}
+    section.about .contents p br{display:none;}
+    section.about .contents p br.all_br{display:block;}
+}
 
 /* contain */
-section.contain{width:90%; max-width: 1400px; margin: 0 auto; padding-top: 70px;}
-section.contain .section_box{}
-section.contain .section_box .section_items{}
-section.contain .section_box .section_items .img_area{}
-section.contain .section_box .section_items .img_area{}
-section.contain .section_box .section_items .text_area .subject{}
-section.contain .section_box .section_items .text_area .url{}
-section.contain .section_box .section_items .text_area .url a{}
-section.contain .section_box .section_items .text_area .info{}
-section.contain .section_box .section_items .text_area .info ul{}
-section.contain .section_box .section_items .text_area .info ul li{}
-section.contain .section_box .section_items .text_area .info ul li .tag{}
-section.contain .section_box .section_items .text_area .info ul li .detail{}
+section.skill{padding: 100px 0; background:#f9f9f9;}
+
+@media (max-width:480px){
+    section.skill{padding: 50px 0;}
+}
+
+/* contain */
+section.contain{padding: 100px 0;}
