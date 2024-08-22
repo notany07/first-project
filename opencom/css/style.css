@@ -5,6 +5,9 @@
 ul,li{margin: 0; padding: 0; list-style: none;}
 a{text-decoration: none;}
 .blind {position: absolute; top: 0; left: 0; overflow: hidden; text-indent: -9999999px; width: 0; height: 0; font-size: 0;}
+:root{
+    --main-color: #b5cc7c;
+}
 
 /* 영문폰트연결 */
 :root{font-size: 16px;}
@@ -29,15 +32,15 @@ header .header_main{max-width: 1400px; width:90%; height: 70px; margin: 0 auto; 
 header .header_main .logo{line-height: 70px;}
 header .header_main .logo h1{font-size: 1.25rem; letter-spacing: 5px;}
 header .header_main .logo h1 a{color: #444;}
-header .header_main .logo h1 a span{color: #b5cc7c;}
+header .header_main .logo h1 a span{color: var(--main-color);}
 header .header_main .logo h1 a span.pf{font-size: 1rem; position: relative;}
-header .header_main .logo h1 a span.pf::before{content: ""; position: absolute; top: 2px; left: -8px; width: 2px; height: 1rem; background: #b5cc7c;}
+header .header_main .logo h1 a span.pf::before{content: ""; position: absolute; top: 2px; left: -8px; width: 2px; height: 1rem; background: var(--main-color);}
 
 /* menu */
 header .header_main ul.nav{display: flex; align-items: center;}
 header .header_main ul.nav li{padding: 1.25rem; color: #444; font-size: 1rem; font-weight: bold; cursor: pointer;}
-header .header_main ul.nav li.on{color: #b5cc7c;}
-header .header_main ul.nav li.on2{border-bottom: 3px solid #b5cc7c;}
+header .header_main ul.nav li.on{color: var(--main-color);}
+header .header_main ul.nav li.on2{border-bottom: 3px solid var(--main-color);}
 
 @media (max-width:480px){
     header .header_main ul.nav{display:none;}
@@ -46,15 +49,16 @@ header .header_main ul.nav li.on2{border-bottom: 3px solid #b5cc7c;}
 
 /* common */
 section .section_inner{width:90%; max-width: 1400px; margin: 0 auto;}
+section .tit{margin-bottom: 100px;}
+section .tit .ko{width: fit-content; margin: 0 auto; font-size: 1.1rem; font-weight: 600; padding-bottom: 1rem; border-bottom:1px solid #000; margin-bottom: 1rem;}
+section .tit .en{width: fit-content; margin: 0 auto; font-size: 1.25rem;}
+
 
 /* about */
 section.about{padding: 100px 0 100px;}
-section.about .tit{margin-bottom: 50px;}
-section.about .tit .ko{width: fit-content; margin: 0 auto; font-size: 1.1rem; font-weight: 600; padding-bottom: 1rem; border-bottom:1px solid #000; margin-bottom: 1rem;}
-section.about .tit .en{width: fit-content; margin: 0 auto; font-size: 1.25rem;}
 section.about .contents{text-align: center;}
 section.about .contents h2{font-weight: normal; font-size: 2rem;}
-section.about .contents h2 span{background: linear-gradient(to left, #b5cc7c, #8ca944); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+section.about .contents h2 span{background: linear-gradient(to left, var(--main-color), #8ca944); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 section.about .contents p{font-size: 1rem; line-height: 1.4; margin-top: 1.25rem;}
 
 
@@ -74,3 +78,24 @@ section.skill{padding: 100px 0; background:#f9f9f9;}
 
 /* contain */
 section.contain{padding: 100px 0;}
+section.contain .swiper{overflow: hidden; position: relative;}
+section.contain .swiper .swiper-button-prev, section.contain .swiper .swiper-button-next{opacity: 0.3;}
+section.contain .swiper .swiper-button-prev{}
+section.contain .swiper .swiper-button-next{}
+section.contain .swiper .section_items{display:flex; column-gap:2rem; align-items: center;}
+section.contain .swiper .section_items .img_area{width: calc((100% - 2rem) / 2);}
+section.contain .swiper .section_items .img_area img{max-width:100%;}
+section.contain .swiper .section_items .txt_area{width: calc((100% - 2rem) / 2);}
+section.contain .swiper .section_items .txt_area .subject{font-size:2rem; font-weight: 600; color: #222;}
+section.contain .swiper .section_items .txt_area .url{margin-top: 0.7rem;}
+section.contain .swiper .section_items .txt_area .url a{font-size: 1.2rem; color: #000; font-weight: 500; transition: 0.35s ease-out;}
+section.contain .swiper .section_items .txt_area .info{margin-top: 2rem;}
+section.contain .swiper .section_items .txt_area .info ul{display:flex; flex-direction: column; row-gap: 0.5rem;}
+section.contain .swiper .section_items .txt_area .info ul li{display:flex; column-gap: 1rem; font-size: 1rem;}
+section.contain .swiper .section_items .txt_area .info ul li .tag{width: 6rem; font-weight: 600;}
+section.contain .swiper .section_items .txt_area .info ul li .detail{font: inherit; font-weight: 500;}
+
+@media (min-width:1024px){
+    section.contain .swiper .swiper-button-prev:hover, section.contain .swiper .swiper-button-next:hover{opacity: 1;}
+    section.contain .swiper .section_items .txt_area .url a:hover{color: var(--main-color); transition: 0.35s ease-out;}
+}

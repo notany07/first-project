@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/fv.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./js/swiper/swiper.css">
     <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/swiper/swiper.js"></script>
 </head>
 <body>
     <header>
@@ -54,36 +56,50 @@
     </section>
     <section class="skill">
         <div class="section_inner">
+            <div class="tit">
+                <p class="ko">기술</p>
+                <p class="en">SKILL</p>
+            </div>
             <div class="swiper">
                 skill1
             </div>
         </div>
     </section>
     <section class="contain">
+        <div class="tit">
+            <p class="ko">포트폴리오</p>
+            <p class="en">PORTFOLIO</p>
+        </div>
         <div class="section_inner">
-            <div class="section_box">
-                <div class="section_items">
-                    <div class="img_area">
-                        <img src="" alt="img">
-                    </div>
-                    <div class="txt_area">
-                        <div class="subject"></div>
-                        <div class="url"><a href="" target="_blank"></a></div>
-                        <div class="info">
-                            <ul>
-                                <li>
-                                    <p class="tag">구분</p>
-                                    <p class="detail">유지보수</p>
-                                </li>
-                                <li>
-                                    <p class="tag">주요기술</p>
-                                    <p class="detail">HTML, CSS, JS, JQUERY, PHP</p>
-                                </li>
-                                <li>
-                                    <p class="tag">기여도</p>
-                                    <p class="detail">60%</p>
-                                </li>
-                            </ul>
+            <div class="swiper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="section_items">
+                            <div class="img_area">
+                                <img src="" alt="img">
+                            </div>
+                            <div class="txt_area">
+                                <div class="subject">사이트 제목</div>
+                                <div class="url"><a href="https://www.sample.com" target="_blank">https://www.sample.com</a></div>
+                                <div class="info">
+                                    <ul>
+                                        <li>
+                                            <p class="tag">구분</p>
+                                            <p class="detail">유지보수</p>
+                                        </li>
+                                        <li>
+                                            <p class="tag">주요기술</p>
+                                            <p class="detail">HTML, CSS, JS, JQUERY, PHP</p>
+                                        </li>
+                                        <li>
+                                            <p class="tag">기여도</p>
+                                            <p class="detail">60%</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,4 +107,21 @@
         </div>
     </section>
 </body>
+<script>
+    var swiper = new Swiper(".contain .swiper", {
+        spaceBetween: 0,
+        centeredSlides: false,
+		loop:true,
+		loopedSlides: 1,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+		autoplay:false,
+        navigation: {
+          nextEl: ".contain .swiper .swiper-button-next",
+          prevEl: ".contain .swiper .swiper-button-prev",
+        },
+    });
+</script>
 </html>
