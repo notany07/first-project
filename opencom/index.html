@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YGH 포트폴리오</title>
+    <title>YGH 포트폴리오 - 2024</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/fv.ico" type="image/x-icon">
@@ -60,9 +60,50 @@
                 <p class="ko">기술</p>
                 <p class="en">SKILL</p>
             </div>
-            <div class="swiper">
-                skill1
-            </div>
+            <ul class="skill_list">
+                <li>
+                    <div class="hover_show">HTML5</div>
+                    <div class="icon"><img src="./images/html5_icon.png" alt="html"></div>
+                    <div class="progress-container" data-fill="90">
+                        <div class="progress-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover_show">CSS3</div>
+                    <div class="icon"><img src="./images/css3_icon.png" alt="html"></div>
+                    <div class="progress-container" data-fill="80" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover_show">JS</div>
+                    <div class="icon"><img src="./images/js_icon.png" alt="html"></div>
+                    <div class="progress-container" data-fill="70" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover_show">JQUERY</div>
+                    <div class="icon"><img src="./images/jquery_icon.png" alt="html"></div>
+                    <div class="progress-container" data-fill="85" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover_show">PHP</div>
+                    <div class="icon"><img src="./images/php_icon.png" alt="html"></div>
+                    <div class="progress-container" data-fill="75" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover_show">GITHUB</div>
+                    <div class="icon"><img src="./images/github_icon.png" alt="html"></div>
+                    <div class="progress-container" data-fill="50" id="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="contain">
@@ -107,21 +148,5 @@
         </div>
     </section>
 </body>
-<script>
-    var swiper = new Swiper(".contain .swiper", {
-        spaceBetween: 0,
-        centeredSlides: false,
-		loop:true,
-		loopedSlides: 1,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-		autoplay:false,
-        navigation: {
-          nextEl: ".contain .swiper .swiper-button-next",
-          prevEl: ".contain .swiper .swiper-button-prev",
-        },
-    });
-</script>
+<script src="./js/main.js"></script>
 </html>
