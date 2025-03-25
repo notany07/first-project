@@ -1,35 +1,5 @@
 @charset "UTF-8";
 
-/* reset */
-*{margin: 0; padding: 0;}
-ul,li{margin: 0; padding: 0; list-style: none;}
-a{text-decoration: none;}
-.blind {position: absolute; top: 0; left: 0; overflow: hidden; text-indent: -9999999px; width: 0; height: 0; font-size: 0;}
-:root{
-    --main-color: #b5cc7c;
-}
-
-/* 영문폰트연결 */
-:root{font-size: 16px;}
-body{font: normal 15px 'RalewayL'; color: #444;}
-@font-face {font-family: 'RalewayL'; src: url("../font/Raleway-Light.ttf");}
-@font-face {font-family: 'RalewayLT'; src: url("../font/Raleway-Thin.ttf");}
-@font-face{font-family: 'SpoqaB'; src: url(../font/SpoqaHanSansBold.ttf);}
-@font-face{font-family: 'SpoqaL'; src: url(../font/SpoqaHanSansLight.ttf), url(../font/NanumSquare_acR.ttf), url(../font/SpoqaHanSansLight.woff);}
-@font-face{font-family: 'SpoqaR'; src: url(../font/SpoqaHanSansRegular.ttf), url(../font/SanumSquare_acR.ttf), url(../font/SpoqaHanSansRegular.woff);}
-
-@media (max-width:1024px){
-    :root{font-size: 1.5vw;}
-}
-
-@media (max-width:767px) {
-    :root{font-size:1.8vw;}
-}
-
-@media (max-width:480px){
-    :root{font-size:3vw;}
-}
-
 /* header */
 header{width: 100%; position: fixed; border-bottom: 1px solid #e6e6e6; background: #fff; z-index: 999;}
 header .header_main{max-width: 1400px; width:90%; height: 70px; margin: 0 auto; display: flex; justify-content: space-between;}

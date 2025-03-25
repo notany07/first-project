@@ -1,0 +1,33 @@
+.index_box{width:90%; max-width:800px; position:fixed; top:50%; left:50%; transform: translate(-50%,-50%);}
+.index_box h2{font-size:3rem; text-align: center;}
+.index_box ul{margin-top: 1.5rem; display: flex; flex-direction: column; height: 55vh; overflow-y: auto;}
+.index_box ul li{border-bottom: 0.1rem solid #cfcfcf;}
+.index_box ul li:first-child{border-top: 0.1rem solid #cfcfcf;}
+.index_box ul li a{display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; row-gap: 0.5rem;}
+.index_box ul li a .index_tag{color: #fff; font-size: 1rem; padding: 0.3rem 1rem; border-radius: 0.3rem;}
+.index_box ul li a .index_tag.web{background-color: rgb(132, 132, 212);}
+.index_box ul li a .index_tag.cloud{background-color: #e64949;}
+.index_box ul li a .index_name{color:var(--main-color); font-size:1.25rem; font-weight:bold; text-align: center;}
+
+.main_section {position:relative; width:100%; height: 100vh;}
+.main_section .circle_bg{position:absolute;}
+.main_section .circle_bg_1{top:3%; right:0; width:18vw; height:18vw;}
+.main_section .circle_bg_2{bottom:5%; left:0; width:20vw; height:20vw;}
+.main_section .circle_bg svg{width:100%; height:100%;}
+.main_section .circle_bg svg circle{fill:var(--main-color);}
+.main_section .circle_bg_1 svg .SvgAnimation-item.blob4-1{transform:translate(66%, 49%);}
+.main_section .circle_bg_1 svg .SvgAnimation-item.blob4-2{transform:translate(68%, 46%);}
+.main_section .circle_bg_1 svg .SvgAnimation-item.blob4-3{transform:translate(75%, 49%);}
+.main_section .circle_bg_1 svg .SvgAnimation-item.blob4-4{transform:translate(66%, 50%);}
+.main_section .circle_bg_1 svg .SvgAnimation-item.blob4-5{transform:translate(66%, 50%);}
+
+.main_section .circle_bg_2 svg .SvgAnimation-item.blob4-1{transform:translate(24%, 49%);}
+.main_section .circle_bg_2 svg .SvgAnimation-item.blob4-2{transform:translate(22%, 46%);}
+.main_section .circle_bg_2 svg .SvgAnimation-item.blob4-3{transform:translate(15%, 49%);}
+.main_section .circle_bg_2 svg .SvgAnimation-item.blob4-4{transform:translate(24%, 50%);}
+.main_section .circle_bg_2 svg .SvgAnimation-item.blob4-5{transform:translate(24%, 50%);}
+
+@media (min-width:767px){
+    .index_box ul li:hover{background-color:#d9d9d9; transition: 0.35s ease-out all;}
+    .index_box ul li:hover a .index_name{color:#000; transition: 0.35s ease-out all;}
+}
